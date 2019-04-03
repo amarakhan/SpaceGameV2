@@ -1,0 +1,36 @@
+*{
+  /* border: 1px solid red; */
+}
+
+.container{
+  margin-top: 2.5%;
+  height: auto;
+  max-width: 550px;
+
+}
+
+h1{
+  text-align: center;
+}
+
+button{
+  margin-top: 1vh;
+}
+
+#logout{
+  text-align: center;
+}
+
+a{
+  font-size: 8em;
+  text-decoration: none;
+  /* color: purple; */
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+h4{
+  text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Space Game Authentication</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Space Game!</h1>
+        <form id="register">
+          <h4 class="text-muted">Register</h4>
+            <div class="form-group">
+                <label for="reg_email">Email address</label>
+                <input type="email" class="form-control" id="reg_email" aria-describedby="emailHelp" placeholder="astronaut@nasa.com"/>
+                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="reg_password">Password</label>
+                <input type="password" class="form-control" id="reg_password" placeholder="password"/>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+        <form id="login">
+          <h4 class="text-muted">Already have an account?</h4>
+            <div class="form-group">
+                <label for="log_email">Email address</label>
+                <input type="email" class="form-control" id="log_email" aria-describedby="emailHelp" placeholder="astronaut@nasa.com"/>
+                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="log_password">Password</label>
+                <input type="password" class="form-control" id="log_password" placeholder="Password"/>
+                <button type="submit" class="btn btn-primary">login</button>
+            </div>
+        </form>
+        <form id="logout">
+            <div class="form-group">
+                <h4 class="text-muted">You are currently logged in</h4>
+                <button type="submit" class="btn btn-primary">Sign out</button>
+                <br>
+                <a href="./index.html">PLAY</a>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBbMTFXSEpUbJ3YX8iJGZ7tVjNgQ2Q_4b8",
+        authDomain: "astronautspacegame.firebaseapp.com",
+        databaseURL: "https://astronautspacegame.firebaseio.com",
+        projectId: "astronautspacegame",
+        storageBucket: "astronautspacegame.appspot.com",
+        messagingSenderId: "1005964973767"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
