@@ -41,6 +41,22 @@ a{
   transition-duration: 1s;
 }
 
+a:hover, a:active{
+  opacity: 1;
+  font-weight: bold;
+}
+
+.play-border{
+  border: 1px solid black;
+  padding: .5rem;
+  display: inline-block;
+  transition-duration: 1s;
+}
+
+.play-border:hover, .play-border:active{
+  transform: rotate(10deg);
+}
+
 p{
   font-size: 1rem;
   letter-spacing: .1rem;
@@ -50,12 +66,6 @@ p{
 }
 p:nth-of-type(1){
   margin-bottom: .1rem;
-}
-
-a:hover, a:active{
-  opacity: 1;
-  font-weight: bold;
-  font-size: 1.3rem;
 }
 
 h4{
@@ -121,7 +131,7 @@ button:first-of-type{
   margin-top: .5rem;
 }
 
-button:hover{
+button:hover,button:active{
   opacity: 1;
   font-weight: bold;
   transform: rotate(10deg);
