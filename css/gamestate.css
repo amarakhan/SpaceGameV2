@@ -1,0 +1,60 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+body{
+    background-image: url('../images/space.jpeg');
+    background-size: cover;
+    margin-top: -20px;
+    /* background-repeat: none; */
+    text-align: center;
+
+}
+
+.design-clip-path{
+    height: 100vh;
+    margin-top: 0;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: rgb(233, 233, 223);
+    /* -webkit-clip-path: polygon(50% 0%, 100% 12%, 100% 88%, 50% 100%, 0 88%, 0 12%);
+    clip-path: polygon(50% 0%, 100% 12%, 100% 88%, 50% 100%, 0 88%, 0 12%); */
+}
+
+.design-clip-path h1{
+    padding-top: 30vh;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.design-clip-path a{
+    text-decoration: none;
+    color: rgb(88, 6, 252);
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    display: block;
+    letter-spacing: .3rem;
+    opacity: .8;
+    transition-duration: 1s;
+    border: 1px solid black;
+}
+.design-clip-path a:first-of-type{
+    margin-bottom: 10px;
+}
+
+.design-clip-path a:first-of-type:hover, .design-clip-path a:first-of-type:active{
+    font-weight: bold;
+    opacity: 1;
+    transform: rotate(8deg);
+}
+
+.design-clip-path a:nth-of-type(2):hover{
+    font-weight: bold;
+    opacity: 1;
+    transform: rotate(8deg);
+}

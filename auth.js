@@ -3,7 +3,6 @@ var loginForm = document.querySelector("#login");
 var logoutForm = document.querySelector("#logout");
 
 
-
 registrationForm.addEventListener("submit", function(e){
     var email = registrationForm.querySelector("#reg_email").value;
     var password = registrationForm.querySelector("#reg_password").value;
@@ -37,8 +36,6 @@ firebase.auth().onAuthStateChanged(function(user) {
         registrationForm.style.display = "none";
         loginForm.style.display = "none";
         logoutForm.style.display = "block";
-
-        // logoutForm.querySelector("input").value = "Logout as " + user.email;
 
     } else {
         registrationForm.style.display = "block";

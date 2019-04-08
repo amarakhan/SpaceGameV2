@@ -1,36 +1,142 @@
-*{
-  /* border: 1px solid red; */
+/* *{
+  border: 1px solid red;
+} */
+
+html{
+  height: 100%;
 }
 
-.container{
-  margin-top: 2.5%;
-  height: auto;
-  max-width: 550px;
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url('../images/space.jpeg');
+}
 
+.div-design{
+  background-color: rgb(233, 233, 223);
+  /* -webkit-clip-path: polygon(50% 0%, 100% 15%, 100% 88%, 50% 100%, 0 87%, 0 14%);
+  clip-path: polygon(50% 0%, 100% 15%, 100% 88%, 50% 100%, 0 87%, 0 14%); */
+  -webkit-clip-path: polygon(50% 0%, 100% 18%, 100% 100%, 50% 100%, 0 100%, 0 18%);
+  clip-path: polygon(50% 0%, 100% 18%, 100% 100%, 50% 100%, 0 100%, 0 18%);
+  height: 100vh;
+  padding: 2rem;
 }
 
 h1{
-  text-align: center;
-}
-
-button{
-  margin-top: 1vh;
-}
-
-#logout{
-  text-align: center;
+  padding-top: 15vh;
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 a{
-  font-size: 8em;
+  color: rgb(88, 6, 252);
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  /* color: purple; */
+  opacity: .8;
+  font-size: 1.2rem;
+  letter-spacing: .3rem;
+  transition-duration: 1s;
 }
 
-a:hover{
-  text-decoration: none;
+p{
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 0;
+  font-weight: lighter;
+}
+p:nth-of-type(1){
+  margin-bottom: .1rem;
+}
+
+a:hover, a:active{
+  opacity: 1;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 h4{
-  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  opacity: .8;
+  letter-spacing: .3rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.margin-h4{
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+
+form{
+  border-top: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+form:first-of-type{
+  border-right: 1px solid black;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+form:nth-of-type(2){
+  border-left: 1px solid black;
+  text-align: left;
+  padding-left: 1rem;
+  border-bottom: 1px solid black;
+}
+
+form:nth-of-type(3){
+  border: none;
+}
+
+label,input{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+input{
+  width: 200px;
+}
+
+button{
+  color: rgb(88, 6, 252);
+  font-family: 'Raleway', sans-serif;
+  transition-duration: 1s;
+  border: 1px solid black;
+  background-color: rgb(233, 233, 223);
+  font-size: 1.2rem;
+  opacity: .8;
+  padding: .5rem;
+  letter-spacing: .3rem;
+}
+
+button:first-of-type{
+  margin-top: .5rem;
+}
+
+button:hover{
+  opacity: 1;
+  font-weight: bold;
+  transform: rotate(10deg);
+}
+
+
+@media (max-width:500px){
+  .div-design{
+    -webkit-clip-path: none;
+    clip-path:none;
+    height: 100%;
+    padding: 1rem;
+  }
+  h1{
+    padding:0;
+    margin-top: 0;
+  }
 }
